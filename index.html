@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Station</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body>
+    <script src="weather_js.js"></script>
+    <nav class="nav-area">
+		<ul>
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">About</a>
+			</li>
+			<li>
+				<a href="#">Further Requirements</a>
+				<ul>
+					<li>
+						<a href="#">Soil quality</a>
+					</li>
+
+					<li>
+						<a href="#">Weather compatibility</a>
+					</li>
+					
+	</nav>
+  
+    <div class="wrapper">
+        <div class="services">
+        
+            <a href="#">
+                <span class="single-img img-three">
+                    <span class="img-text">
+                        <h4>Today</h4>
+                        <p>32 c</p>
+                        <button class="button" href="#" onclick="show('popup')">Details</button>
+
+<!-- This is what will be included inside the popup -->
+<div class="popup" id="popup">
+<p>Humidity: 23.45</p>
+<p>Pressure: 12 </p>
+  <a href="#" onclick="hide('popup')">Close</a>
+</div>
+
+
+
+            
+                    </span>
+                </span>
+            </a>    
+        
+        <a href="#">
+            <span class="single-img img-two"> 
+                <span class="img-text">
+                    <h4>Yesterday</h4>
+                    <p>33 c</p>
+                    <button class="button" href="#" onclick="show('popup')">Details</button>
+
+<!-- This is what will be included inside the popup -->
+<div class="popup" id="popup">
+<p>Humidity: 22.01</p>
+<p>Pressure: 10.6 </p>
+  <a href="#"  onclick="hide('popup')">Close</a>
+</div>
+
+
+
+                </span>
+            </span>
+        </a>
+
+        <a href="#">
+            <span class="single-img img-one">
+                <span class="img-text">
+                    <h4>Day before<br><br>Yesterday</h4>
+                    <p>34 c</p>
+                    <button class="button" href="#" onclick="show('popup')">Details</button>
+
+<!-- This is what will be included inside the popup -->
+<div class="popup" id="popup">
+<p>Humidity: 20.6</p>
+<p>Pressure: 14 </p>
+  <a href="#" onclick="hide('popup')">Close</a>
+</div>
+
+
+
+                </span>
+            </span>
+            </a>
+            <a href="#">
+                <span class="single-img img-four">
+                    <span class="img-text">
+                        <h4>Tomorrow</h4>
+                        <p>32 c</p>
+                        <button class="button" href="#" onclick="show('popup')">Details</button>
+
+<!-- This is what will be included inside the popup -->
+<div class="popup" id="popup">
+<p>Humidity: 19.82</p>
+<p>Pressure: 15 </p>
+  <a href="#" onclick="hide('popup')">Close</a>
+</div>
+
+            
+                    </span>
+                </span>
+            </a>    
+    </div>
+    </div>
+</body>
+</html>
